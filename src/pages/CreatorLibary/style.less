@@ -1,0 +1,149 @@
+.container {
+  min-height: calc(100vh - 0.6rem);
+  max-width: 14.50rem;
+  margin: 0 auto;
+
+  .filterBox {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.08rem;
+
+    .filter {
+      .label {
+        min-width: 0.98rem;
+        color: rgba(102, 102, 102, 1);
+      }
+
+      .select {
+        cursor: pointer;
+        padding: 0.04rem 0.1rem;
+        min-width: 0.36rem;
+        font-size: 0.14rem;
+        color: #191919;
+        border-radius: 0.03rem;
+        min-height: 0.24rem;
+      }
+
+      .active {
+        color: #fff;
+        background-color: #F23051;
+      }
+
+      .select:hover {
+        color: #fff;
+        background-color: #F23051;
+      }
+    }
+  }
+
+  .contentBox {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.08rem;
+
+    .header {
+      color: rgba(102, 102, 102, 1);
+      margin-bottom: 0.18rem;
+    }
+
+    .title {
+      font-size: 0.14rem;
+    }
+
+    .dateTag {
+      cursor: pointer;
+      padding: 0.04rem 0.1rem;
+      min-width: 0.36rem;
+      font-size: 0.14rem;
+      color: #191919;
+      border-radius: 0.03rem;
+      min-height: 0.24rem;
+    }
+
+    .active {
+      color: #F23051;
+    }
+
+    .dateTag:hover {
+      color: #F23051;
+    }
+
+    .table {
+
+      .info {
+        width: 2.8rem;
+        padding: 0 0.1rem;
+
+        .img {
+          margin-right: 0.1rem;
+          width: 0.88rem;
+          height: 0.88rem;
+          border-radius: 0.08rem;
+          background-color: rgba(59, 130, 246, 0.5);
+        }
+
+        .name {
+          cursor: pointer;
+          width: 100%;
+          font-size: 0.16rem;
+          font-weight: bold;
+          color: #2f3032;
+
+          &:hover {
+            color: #F23051;
+          }
+        }
+
+        .media {
+          margin-top: 0.06rem;
+        }
+
+        .more {
+          display: flex;
+          margin-top: 0.06rem;
+
+          .country {
+            display: inline-block;
+            width: 0.21rem;
+            height: 0.14rem;
+            background-color: rgba(59, 130, 246, 0.5);
+          }
+
+          .icon {
+            display: inline-block;
+            border-radius: 50%;
+            width: 0.18rem;
+            height: 0.18rem;
+            background-color: rgba(59, 130, 246, 0.5);
+          }
+        }
+      }
+
+      :global {
+
+        .ant-table-cell {
+          background: #FAFAFA;
+          font-size: 0.13rem;
+          font-weight: 500;
+          color: #666666;
+        }
+
+        .ant-table-container>.ant-table-content>table>thead>tr>th {
+          border-inline-end: none;
+        }
+
+        .ant-table-container>.ant-table-content>table>thead>tr>th:last-child {
+          border-inline-end: 1px solid #f0f0f0;
+        }
+
+        .ant-table-tbody>tr>td {
+          padding: 0.12rem 0;
+        }
+      }
+    }
+  }
+}

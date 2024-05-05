@@ -1,0 +1,275 @@
+.container {
+
+  .box {
+    margin: 0 0.3rem;
+    background: linear-gradient(15deg, #F2F5F7 0%, rgba(242, 245, 247, 0.00) 100%) !important;
+  }
+
+  .part {
+    max-width: 12.48rem;
+    margin: 0.83rem auto 0;
+
+    .col {
+
+      .title {
+        font-size: 0.58rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      .text {
+        color: #717171;
+        margin-top: 0.38rem;
+        margin-bottom: 0.47rem;
+        font-style: normal;
+        font-weight: 400;
+
+        div {
+          max-width: 5.01rem;
+          color: #717171;
+          font-size: 0.16rem;
+          line-height: 0.24rem;
+        }
+
+        div:first-child {
+          margin-bottom: 0.2rem;
+        }
+      }
+
+      .btnBox {
+        margin-bottom: 50px;
+
+        .btn {
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          background-color: #3C8CFF;
+          font-size: 16px;
+          border-radius: 0.24rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 0.2rem;
+          padding: 0.12rem 0.24rem;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.20), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14) !important;
+          min-width: 155px !important;
+          text-align: center;
+        }
+
+        .btn:hover {
+          background-color: #1471f6 !important;
+        }
+      }
+
+      .tips {
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-size: 0.16rem;
+        margin-bottom: 0.16rem;
+
+        .count {
+          font-size: 0.24rem;
+        }
+      }
+    }
+
+    .col2 {
+      padding: 0.12rem 0.24rem 0;
+    }
+  }
+
+  .slickBox {
+    width: 12.48rem;
+    margin: 0.3rem auto 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    .slickItems {
+      display: flex;
+      flex-wrap: nowrap;
+      animation: move 10s linear infinite;
+    }
+
+    .slickItem {
+      width: 2.08rem;
+      height: 0.3rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .slick {
+      width: auto;
+      height: 100%;
+      padding: 0 0.3rem;
+    }
+
+    @keyframes move {
+      /* 公式：主图张数 * 单个图片宽度（每轮主图只有 4 张，4 张照片为一个周期，如果需要轮播的主图为 7、8、9...张，都一样） */
+      100% {
+        transform: translateX(-12.48rem);
+      }
+    }
+  }
+
+  .box2 {
+    padding: 0 0.3rem;
+    background-color: #fff;
+  }
+
+  .part2 {
+    max-width: 12.48rem;
+    margin: 1rem auto 0.2rem;
+
+    .title {
+      max-width: 5.8rem;
+      margin: 0 auto 0.25rem;
+      font-size: 0.4rem;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .description {
+      max-width: 5.79rem;
+      margin: auto;
+      text-align: center;
+      font-size: 16px;
+      line-height: 0.24rem;
+
+      div {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
+  .part3 {
+    max-width: 9.06rem;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      font-size: 0.58rem;
+      line-height: normal;
+    }
+  }
+
+  .part4 {
+    max-width: 12.48rem;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      font-size: 0.58rem;
+      line-height: normal;
+      margin: 0.1rem 0 0.15rem;
+    }
+
+    .row {
+
+      .col {
+        padding: 0 0.24rem;
+
+        .plan {
+          padding: 0.4rem 0.5rem 0.3rem 0.5rem;
+          display: flex;
+
+          .check {
+            margin-right: 0.47rem;
+            width: 0.49rem;
+            height: 0.49rem;
+            border-radius: 0.08rem;
+            background-color: #7649fd;
+          }
+
+          .content {
+            flex: 1;
+
+            .label {
+              font-size: 0.24rem;
+              font-style: normal;
+              line-height: normal;
+              margin-bottom: 0.16rem;
+            }
+
+            .tips {
+              color: #717171;
+              font-size: 0.16rem;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .box3 {
+    padding-top: 0.5rem;
+    max-width: 1248px;
+    margin: 0.5rem auto 0;
+
+    .title {
+      text-align: center;
+      font-size: 0.58rem;
+    }
+  }
+
+  .FAQBox {
+    max-width: 1248px;
+    margin: 0.34rem auto 0.2rem;
+    border-radius: 0.1rem;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.07);
+
+    .content {
+      margin: 0 0.24rem;
+      padding: 0.33rem 0.36rem;
+
+      .title {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+        color: #000000;
+        margin-bottom: 0.2rem;
+      }
+
+      :global {
+
+        .ant-collapse-borderless {
+          background-color: #fff;
+        }
+
+        .ant-collapse-header {
+          font-size: 0.16rem;
+          line-height: 0.2rem;
+          color: #000000;
+          padding: 0.12rem 0;
+        }
+
+        .ant-collapse-content-box {
+          padding: 0.1rem 0.25rem 0.15rem 0.25rem;
+          margin-bottom: 0.2rem;
+          font-size: 0.16rem;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .footerBox {
+    margin: 0.7rem 0.3rem 0 0.3rem;
+    padding: 0 0.3rem;
+
+    .content {
+      max-width: 12.48rem;
+      margin: 0 auto 0.2rem;
+      padding-bottom: 0.2rem;
+
+      .title {
+        font-size: 0.12rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.18rem;
+      }
+    }
+  }
+}
